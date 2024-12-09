@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .create-quiz-container {
+    width: 400px;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .create-quiz-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .create-quiz-container textarea {
+    width: calc(100% - 5px); /* Reduce width by the padding on both sides */
+    height: 100px;
+    padding: 10px; /* Add equal padding on all sides */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+  
+  .create-quiz-container textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Answer Input and Radio Styling */
+  .answer-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .answer-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .answer-container input[type="text"]:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .answer-container input[type="radio"] {
+    cursor: pointer;
+    accent-color: #4caf50; /* Modern browsers */
+    width: 20px;
+    height: 20px;
+  }
+  
+  .create-quiz-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(135deg, #4caf50, #008cba);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-quiz-container button:hover {
+    background: linear-gradient(135deg, #008cba, #4caf50);
+    transform: scale(1.02);
+  }
+  
+  .create-quiz-container button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
